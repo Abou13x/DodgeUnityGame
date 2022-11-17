@@ -15,15 +15,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "ccadac7d-5fc6-4dae-9e73-89bf5236fac7",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "Jump",
                     "type": "Value",
                     "id": "3a8a4389-e284-4a6e-9f8b-ae518d561ddf",
@@ -47,7 +38,7 @@
                 },
                 {
                     "name": "WASD",
-                    "id": "18cdb59d-daf9-41ca-8a97-b4536b48c4b3",
+                    "id": "257ba774-2d38-4fdd-b3e6-31dc80ebcad7",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -58,7 +49,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "1af04b72-0722-420b-9e42-54e4ec0ebe04",
+                    "id": "cb98f3d4-7188-4ded-a41e-6723a2a3f8bb",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -69,7 +60,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "52c71d4c-edf7-4608-af07-7ffb1a54ff9f",
+                    "id": "e9970b8c-5d88-4ee1-8949-f32a305cb9fa",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -77,28 +68,6 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "b932aa58-9dce-46b1-8360-eac7375e29a9",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "199e2422-9c9a-4912-90ce-7826013577a5",
-                    "path": "<Pointer>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 },
                 {
                     "name": "",

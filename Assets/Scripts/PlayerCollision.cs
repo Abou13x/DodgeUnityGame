@@ -1,17 +1,20 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using System.Diagnostics;
-//using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-//public class PlayerCollision : MonoBehaviour
-//{
-//    // Start is called before the first frame update
-//   void OnCollisionEnter(Collision collisionInfo)
-//    {
-//        //video 5
-//       if(collisionInfo.collider.name == "Obstacle")
-//        {
-//            //Debug.Log("We hit oobstacle");
-//        }
-//    }
-//}
+public class PlayerCollision : MonoBehaviour
+{
+    public PlayerController movement;
+
+    // Start is called before the first frame update
+   void OnControllerColliderHit(ControllerColliderHit collisionInfo)
+    {
+        //video 5
+       if(collisionInfo.collider.gameObject.tag == "Obstacle")
+        {
+            movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
+        }
+   
+    }
+}

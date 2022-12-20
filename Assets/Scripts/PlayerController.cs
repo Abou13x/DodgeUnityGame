@@ -1,7 +1,4 @@
 ﻿
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public float speed = 5.0F;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +36,14 @@ public class PlayerController : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         characterController.SimpleMove(forward * speed);
         Move();
+    }
+    //not done yet v8
+    private void FixedUpdate()
+    {
+        if (transform.position.y< -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -65,6 +71,7 @@ public class PlayerController : MonoBehaviour
             jump();
             animator.Play("Jump");
             
+
         }
         //if (moveVector.magnitude > 0)
         //{
